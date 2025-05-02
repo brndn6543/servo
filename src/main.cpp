@@ -15,7 +15,7 @@ void setup() {
 
 void loop() {
     // The rotor will go from 0 to 180 degrees.
-    for (pos  = 0;  pos <= 180; pos+=2) {   //
+    for (pos  = 0;  pos <= 180; pos+=2) {   // The iteration expression controls speed.
         svo_servo.write(pos);               // Go to position.
         delay(15);                          // Wait for the servo to reaach position.
     }
